@@ -155,10 +155,10 @@ jQuery(function($) {
 
   var image = {
     url: 'images/icon.png',
-    size: new google.maps.Size(24, 24),
+    size: new google.maps.Size(16, 16),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(17, 34),
-    scaledSize: new google.maps.Size(24, 24)
+    scaledSize: new google.maps.Size(16, 16)
   };
 
   Markers = {
