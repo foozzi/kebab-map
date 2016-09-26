@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Карта шаурмы</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico"/>
+    <link rel="stylesheet" href="css/common.css?v=3" media="all"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="load">
+        <div class="load__wrp">
+            <h1 class="load__h1">Загрузка...</h1>
+        </div>
+    </div>
+
+    <div id="map-canvas"></div>
+
+    <div class="button add-button btn-default btn-sm">Добавить точку</div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbdOPrkbxJ-LVa7w60ekgQyvqvmtCOv8"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.debounce-1.0.5.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <div id="createPopup">
+        <div class="add-popup">
+            <form class="form-horizontal" method="post" action="#">
+                <p class="add-popup__title" style="padding-top:6px;">Добавить новую точку с шаурмой</p>
+                <p class="add-popup__error"></p>
+                <textarea class="form-control" name="description" placeholder="Подскажите нам название заведения и как найти эту розетку"></textarea>
+                <input class="btn btn-default btn-xs pull-left" style="padding: 5px 10px; margin: 3px 0px 3px 10px;" type="submit" value="Добавить">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
